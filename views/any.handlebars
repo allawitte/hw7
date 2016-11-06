@@ -1,0 +1,26 @@
+<div class="page-header">
+    <h3>Any Page</h3>
+
+    <div class="container">
+        <div class="panel">
+            {{msg}}
+        </div>
+        <form action="javascript:void(0);" name="myform" class="panel">
+            <div class="col-md-6">
+                <input type="text" name="path1" placeholder="type a path here for PUT" id="put"/>
+            </div>
+            <div class="col-md-6">
+                <button class="btn-prymary" onclick="sendPut()">PUT</button>
+            </div>
+        </form>
+        <form action="javascript:void(0);" name="myform1" class="panel" class="panel">
+            <div class="col-md-6">
+                <input type="text" id="del" placeholder="type a path here for DELETE"/>
+            </div>
+            <div class="col-md-6">
+                <button class="btn-prymary" onclick="sendDel()">DELETE</button>
+            </div>
+        </form>
+
+    </div>
+</div>

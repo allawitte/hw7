@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>head}}
+    <title>Express Tutorial</title>
+</head>
+<body>
+
+{{>bsnavbar}}
+
+<div class="container">
+    {{{body}}}
+</div>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script>
+    (function($) {
+        sendPut = function() {
+              $.ajax({
+                type: "PUT",
+                url: "/sub/" + inp.val(),
+                data: "",
+                success: function (msg) {
+                    console.log('succcess');
+                }
+            });
+        }
+        sendDel = function() {
+            var inp = $('#del');
+            console.log(inp.val());
+
+            $.ajax({
+                type: "DELETE",
+                url: "/sub/"+inp.val(),
+                data: "",
+                success: function(msg){
+                    console.log('succcess');
+                }
+            });
+        }
+
+    })(jQuery);
+</script>
+</body>
+</html>

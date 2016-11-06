@@ -1,0 +1,27 @@
+<div class="page-header">
+    <h3>Send Data via Post Request</h3>
+    <div class="container">
+    <div class="panel">
+        {{msg}}
+    </div>
+    <form action="/post" name="myform"  method="POST" id="formx" class="panel">
+        <div class="col-md-6">
+            <div class="form-group">
+            <input type="text" name="name" placeholder="name" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <input type="text" name="fanmane" placeholder="familyname" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <input type="text" name="address" placeholder="address" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <input type="text" name="key" placeholder="key for header" class="form-control"/>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <input type="submit" class="btn-prymary" value="POST">
+        </div>
+    </form>
+</div>
+</div>
